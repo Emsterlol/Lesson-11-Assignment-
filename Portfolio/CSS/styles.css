@@ -1,0 +1,259 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #A1D6E2;
+}
+
+header {
+    background-color: #1995AD;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.topnav .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #1995AD;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #3475d6;
+    color: white;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav.responsive #myLinks {
+    display: block;
+}
+
+.active {
+    background-color: #70bfd1;
+    color: white;
+}
+
+main {
+    padding: 20px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Banner Styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+.content h1, .content p {
+    margin: 0;
+    padding: 10px;
+    animation: scroll 10s ease infinite;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    background-color: #1995AD;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: auto;
+    height: 100%;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1;
+    color: #fff;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* Grid Style */
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item1 {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.grid-item2 {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Img */
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Social Links */
+footer {
+    background-color: #1995AD;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #aed9e0;
+    padding: 20px;
+}
+
+.FooterText {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #91afa9;
+    font-size: 40px;
+    font-family: lobster two;
+    color: white;
+    margin-right: 20px;
+}
+
+.footer-info {
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-info:last-child {
+    margin-right: 0;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+    .topnav:not(.responsive) #myLinks {
+        display: none;
+    }
+
+    .topnav.responsive #myLinks {
+        display: block;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+    .topnav .icon {
+        display: none;
+    }
+
+    .topnav a {
+        display: block;
+        float: none;
+    }
+
+    .topnav {
+        overflow: visible;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .topnav #myLinks {
+        display: block;
+    }
+}

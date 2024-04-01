@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="topnav">
+            <a href="index.html" alt="Home Page" class="active">Home</a>
+            <div id="myLinks">
+                <a href="Certifications.html" alt="Certifications">Certifications</a>
+                <a href="#" alt="My About Me">About</a>
+                <a href="#" alt="My Work Experience">Experience</a>
+                <a href="#" alt="How to Contact Me">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </nav>
+        <!-- Banner -->
+        <div class="banner">
+            <div class="background-image"></div>
+            <div class="content">
+                <h1>Emily Horne</h1>
+                <p>Explore my projects and creations</p>
+            </div>
+        </div>        
+        <div class="banner">
+            <div class="slider">
+                <img class="slide" src="Images/Emmy-300.jpg" alt="Picture of Myself">
+                <img class="slide" src="Images/Hikes-300.jpg" alt="Looking Glass Falls">
+                <img class="slide" src="Images/ExperienceLinkedin-450.jpg" alt="Project 3">
+            </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </header>
+    <!-- Content -->
+    <main>
+        <div class="grid-container2">
+            <!-- Grid items -->
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example1.JPG" alt="Certification 1"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example2.JPG" alt="Certification 2"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example3.JPG" alt="Certification 3"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example4.JPG" alt="Certification 4"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example5.JPG" alt="Certification 5"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example6.JPG" alt="Certification 6"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example7.JPG" alt="Certification 7"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example8.JPG" alt="Certification 8"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example9.JPG" alt="Certification 9"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example10.JPG" alt="Certification 10"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example11.JPG" alt="Certification 11"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example12.JPG" alt="Certification 12"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example13.JPG" alt="Certification 13"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example14.JPG" alt="Certification 14"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example15.JPG" alt="Certification 15"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example16.JPG" alt="Certification 16"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example17.JPG" alt="Certification 17"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example18.JPG" alt="Certification 18"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example19.JPG" alt="Certification 19"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example20.JPG" alt="Certification 20"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example21.JPG" alt="Certification 21"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example22.JPG" alt="Certification 22"></div>
+            <div class="grid-item2"><img src="Images/LinkedinLearning/Example23.JPG" alt="Certification 23"></div>
+        </div>
+    </main>
+    <!--  Contact/Socials  -->
+    <footer>
+        <H3>Reach our to me here!</H3>
+        <a href="mailto:horne.e.emily@gmail.com" target="_blank"><img src="Images/Email.png" class="footer-info" alt="My Email"></a>
+        <a href="https://eehorne24f767b24f.wordpress.com/" target="_blank"><img src="Images/Website.png" class="footer-info" alt=" My Website"></a>
+        <a href="https://github.com/Emsterlol" target="_blank"><img src="Images/GitHub.png" class="footer-info" alt=" My GitHub Account"></a>
+        <a href="https://www.linkedin.com/in/emily-horne-97b74b266/" target="_blank"><img src="Images/Linkedin.png" class="footer-info" alt="My Linkedin Link"></a>
+    </footer>
+    <script src="JS/javascript.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
